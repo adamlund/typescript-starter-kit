@@ -1,0 +1,58 @@
+{
+  "name": "typescript-starter-kit",
+  "version": "0.0.1",
+  "description": "Typescript boilerplate project includes lodash, gulp, and axios",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@types/lodash": "^4.14.92",
+    "axios": "^0.17.1",
+    "lodash": "^4.17.4",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "browserify": "^15.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-typescript": "^3.2.3",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jasmine-core": "^2.8.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-typescript": "^3.0.9",
+    "tsify": "^3.0.4",
+    "tslint": "^5.8.0",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
+    "serve": "node ./node_modules/http-server/bin/http-server dist/",
+    "test": "./node_modules/.bin/karma start ./karma.conf.js",
+    "test_watch": "./node_modules/.bin/karma start ./karma.conf.js --browsers=Chrome --single-run=false --auto-watch",
+    "build": "gulp",
+    "clean": "gulp clean",
+    "watch": "gulp watch",
+    "lint": "./node_modules/.bin/tslint -c ./tslint.json './src/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlund/typescript-starter-kit.git"
+  },
+  "keywords": [
+    "typescript",
+    "boilerplate"
+  ],
+  "author": "Adam Lund",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamlund/typescript-starter-kit/issues"
+  },
+  "homepage": "https://github.com/adamlund/typescript-starter-kit#readme"
+}
