@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+    position: relative;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+article {
+    text-align: center;
+}
